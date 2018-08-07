@@ -1,12 +1,21 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-class HelloWorld extends React.Component {
+class HelloUser extends React.Component {
+
+  constructor(props){
+    super(props)
+
+    this.state = {
+      username: 'the dude'
+    }
+  }
+
   render() {
     return (
-      <div>Hello World!</div>
+      <div>Hello {this.state.username}</div>
     )
   }
 }
 
-ReactDOM.render(<HelloWorld />, document.getElementById('root'));
+ReactDOM.render(<HelloUser />, document.getElementById('root'));
