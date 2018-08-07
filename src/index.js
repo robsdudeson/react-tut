@@ -1,14 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-class HelloUser extends React.Component {
-  render() {
-    return (
-      <div>
-        Hello {this.props.name}
-      </div>
-    )
-  }
-}
+import FriendsContainer from './FriendsContainer'
 
-ReactDOM.render(<HelloUser name="Donnie"/>, document.getElementById('root'));
+ReactDOM.render(<FriendsContainer />, document.getElementById('root'));
