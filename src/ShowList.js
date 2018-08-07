@@ -10,3 +10,7 @@ export default class ShowList extends React.Component{
         </div>
     )}
 }
+
+ShowList.defaultProps = {
+    names: []
+}
